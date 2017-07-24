@@ -13,7 +13,7 @@ export const typeOrder = [
 
 export const parentComponents = _.flow(
   _.filter(META.isParent),
-  _.sortBy('_meta.name')
+  _.sortBy('_meta.name'),
 )(semanticUIReact)
 
 const mathSign = Math.sign || function (x) {

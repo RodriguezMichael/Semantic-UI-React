@@ -291,7 +291,7 @@ const Introduction = () => (
       </p>
       <p>
         Take a look at our
-        <a href={`${repoURL}/blob/master/src/lib/AutoControlledComponent.js` }>
+        <a href={`${repoURL}/blob/master/src/lib/AutoControlledComponent.js`}>
           &nbsp;<code>AutoControlledComponent</code>&nbsp;
         </a>
         to see how this was done.

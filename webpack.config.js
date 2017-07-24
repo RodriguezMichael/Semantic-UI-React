@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const _ = require('lodash')
 const webpack = require('webpack')
 const config = require('./config')
+
 const { paths } = config
 const { __DEV__, __STAGING__, __TEST__, __PROD__ } = config.compiler_globals
 
@@ -103,14 +104,14 @@ if (!__TEST__) {
     // https://github.com/webpack-contrib/karma-webpack/issues/22
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor'],
-    })
+    }),
   )
 }
 
 if (__DEV__) {
   webpackConfig.plugins.push(
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
   )
 }
 
@@ -125,7 +126,7 @@ if (__PROD__ || __STAGING__) {
         dead_code: true,
         warnings: false,
       },
-    })
+    }),
   )
 }
 

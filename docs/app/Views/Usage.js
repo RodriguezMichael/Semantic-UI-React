@@ -190,11 +190,11 @@ const Usage = () => (
         <List>
           <List.Item
             icon='github'
-            content={ <a href='https://github.com/webpack/webpack/issues/1750' target='_blank'>webpack/webpack#1750</a>}
+            content={<a href='https://github.com/webpack/webpack/issues/1750' target='_blank'>webpack/webpack#1750</a>}
           />
           <List.Item
             icon='github'
-            content={ <a href='https://github.com/webpack/webpack/issues/2867' target='_blank'>webpack/webpack#2867</a>}
+            content={<a href='https://github.com/webpack/webpack/issues/2867' target='_blank'>webpack/webpack#2867</a>}
           />
           <List.Item
             icon='github'
